@@ -1,0 +1,53 @@
+# Bytecode キャッシュ
+__pycache__/
+*.py[cod]
+
+# 環境変数や仮想環境
+.env
+.venv/
+venv/
+
+# Jupyter Notebook のチェックポイント
+.ipynb_checkpoints/
+
+# VSCode 設定
+.vscode/
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# ログファイル
+*.log
+
+# pip キャッシュ
+pip-log.txt
+pip-delete-this-directory.txt
+
+# pytest / unittest のテスト結果
+.cache/
+.tox/
+.nox/
+
+# mypy / type checker キャッシュ
+.mypy_cache/
+.dmypy.json
+
+# Coverage レポート
+.coverage
+htmlcov/
+
+# Build / Distribution
+build/
+dist/
+*.egg-info/
+MANIFEST
+
+# Docker関連
+docker-compose.override.yml
+
+# MacOS のゴミファイル
+.DS_Store
+
+# Jupyter Notebook の出力
+*.out
