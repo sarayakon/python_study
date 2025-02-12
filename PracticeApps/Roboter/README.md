@@ -19,4 +19,4 @@
 | 6   | 回答が正しくない場合の分岐 | 再確認時に回答が正しくない場合、アプリを終了する | 未完 | |
 | 7   | 人気のおすすめゲームの表示 | CSVにある人気ゲームを２つ表示する  | 未完 | |
 
-![フローチャート](PracticeApps/Roboter/flowchart/roboter_flow.png)
+![フローチャート](flowchart/roboter_flow.png)
