@@ -1,19 +1,24 @@
 # Check Customer Name for Roboter App
+from PracticeApps.Roboter.lib.RegisterGame import RegisterGame
 
 
-class RoboterCheckName:
+class RoboterCheckGame:
 
     def __init__(self):
-        self.customer_name = ""
+        self.game_name = ""
         self.answer = ""
+        self.game_name_csv_path = './game_name_csv'
 
-    def check_customer_name(self):
+        self.register_Game = RegisterGame(self.game_name_csv_path)
+
+    def check_favorite_game(self, name):
         answer_number = 0
+        self.register_Game.check_exist_favorite_games()
         while answer_number <= 5:
             if answer_number == 0:
-                print(f"Hello! I'm Roboko. What's your name?")
-                self.customer_name = input().strip().lower()
-            print(f'Thank you for your input!Is your name {self.customer_name}? Please answer yes or no')
+                print(f"{name}. What's your favorite game?")
+                self.game_name = input().strip().lower()
+            print(f'Thank you for your input!Is your favorite game {self.game_name}? Please answer yes or no')
             self.answer = input().strip().lower()
             if self.answer == 'yes':
                 break
@@ -26,4 +31,4 @@ class RoboterCheckName:
         if answer_number >= 5:
             print(f'You have exceeded the limit of incorrect answers. Please restart the app.')
         else:
-            return self.customer_name
+            return self.game_name
